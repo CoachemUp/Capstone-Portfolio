@@ -1,9 +1,26 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.modal-body,
+.modal-title {
+  color: black;
+}
+.nav-item {
+  cursor: pointer;
+}
+
 /* Custom auto type styles */
 span {
   color: brown;
 }
 .auto-type {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 /* Header Parallax Element Style*/
 .hero {
@@ -12,20 +29,19 @@ span {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
+  background-image: url(/assets/markus-spiske-hvSr_CVecVI-unsplash.jpg);
 }
-/* Image for Parallax Section */
-.hero-image {
-  background-image: url(/assets/Jacksonville.jpg);
+#divheight {
+  height: 80vh;
 }
 
+/* back to top button */
 #btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    }
-
-
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
 
 /* project overlay */
 .project-image {
@@ -35,6 +51,7 @@ span {
 .project {
   display: block;
 }
+
 .project-overlay {
   position: absolute;
   top: 0;
@@ -43,7 +60,7 @@ span {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +72,6 @@ span {
 .project-overlay--blur {
   backdrop-filter: blur(5px);
 }
-
 
 .project-overlay > * {
   transform: translateY(20px);
@@ -69,4 +85,24 @@ span {
 .project-overlay:hover > * {
   transform: translateY(0);
 }
+/* project font size */
+.project-description {
+  padding: 5px;
+  text-align: center;
+  font-size: 0.5rem;
+}
 
+/* project image sizing */
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+}

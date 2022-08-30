@@ -7,21 +7,26 @@
     <!-- bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/2eee13a953.js" crossorigin="anonymous"></script>
+
     <!-- custom css -->
     <link href="css/custom.css" rel="stylesheet" />
     <title>Capstone Portfolio</title>
 </head>
 
 <body>
-    <!--container -->
+
+
     <!-- navbar -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
         <div class="container-lg">
             <!-- navbar brand / title -->
-            <a class="navbar-brand" href="#home">
-                <span class="text-secondary fw-bold"> My Portfolio </span>
+            <a class="navbar-brand" data-aos="fade-right" data-aos-delay="400" href="#home">
+                <span class="text-secondary fw-bold" >CoachEmUp</span>
             </a>
             <!-- toggle button for mobile nav -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -32,16 +37,16 @@
             <!-- navbar links -->
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="100">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
                         <a class="nav-link" href="#resume">Resume</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="300">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -51,11 +56,11 @@
     <!-- navbar -->
 
     <!-- jumbotron -->
-    <section class="hero hero-image" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 text-md-start">
-                    <div class="display-2">Jeff Cobb</div>
+    <section class="hero" id="home">
+        <div class="container-lg ">
+            <div class="row align-items-center justify-content-center" id="divheight" >
+                <div class="col-md-8" data-aos="zoom-in-right" data-aos-delay="750">
+                    <div class="display-2 text-light" >Jeff Cobb</div>
                     <div class="display-5 text-muted">
                         I'm a <span class="auto-type"></span>
                     </div>
@@ -66,11 +71,14 @@
     <!-- /jumbotron -->
 
     <!-- about -->
-    <section class="bg-light" id="about">
-        <div class="container">
-            <div class="row">
+    <section id="about bg-light">
+        <div class="container-lg ">
+            <div class="row my-3">
                 <div class="col">
                     <h2 class="text-muted">About</h2>
+                    <div>
+                        <hr class="border border-dark border-2 col-8">
+                    </div>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                         alias voluptatum laborum ex tempora, earum amet doloremque non a
@@ -79,10 +87,14 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-sm-3">
-                        <img src="/assets/HeadShot.jpg" class="img-thumbnail" alt="..." />
+                        <img src="/assets/HeadShot.jpg" class="img-thumbnail border-0 d-none d-sm-block"
+                            alt="Jeff Cobb" />
                     </div>
-                    <div class="col-md-8">
+                    <div class="col">
                         <h5 class="text-muted">Web Developer</h5>
+                        <div>
+                            <hr class="border border-dark border-2 col-7">
+                        </div>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Itaque, optio? Id quod eius, placeat reiciendis quae sunt
@@ -96,10 +108,13 @@
     </section>
     <!-- /about -->
     <!-- resume -->
-    <section class="bg-light" id="resume">
-        <div class="container-sm">
+    <section id="resume">
+        <div class="container-lg">
             <div class="row">
                 <h2 class="text-muted">Resume</h2>
+                <div>
+                    <hr class="border border-dark border-2 col-8">
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
                     inventore dolorem porro expedita necessitatibus quisquam accusantium
@@ -112,49 +127,209 @@
     <!-- /resume -->
 
     <!-- projects -->
-    <section class="bg-light mt-5" id="portfolio">
+    <section id="portfolio">
         <div class="container-lg">
             <div class="row">
                 <div>
                     <h2 class="text-muted">Portfolio</h2>
+                    <div>
+                        <hr class="border border-dark border-2 col-8">
+                    </div>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, dolorum
                         ut. Veritatis rem atque iste officiis tenetur nobis quisquam? Corporis
                         saepe temporibus iste voluptates non magni in, natus rem nam!
                     </p>
                 </div>
+
             </div>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card">
-                    <div class="project-image">
-                    <img src="assets/ei.jpg" class="card-img-top project" alt="...">
-                    <div class="project-overlay">
-                        <div class="project-title">Help</div>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In saepe maxime ratione quo odit fugiat, blanditiis doloribus tempora nemo inventore.</p>
+            <!-- project 1 -->
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xxl-4 g-4 align-items-center justify-content-center pic">
+                <div class="col pictures">
+                    <div class="title d-lg-none text-center">Responsive Layout</div>
+                    <div class="project-image border border-dark " data-item="html">
+                        <img src="assets/project2.png" class="card-img-top project" alt="...">
+                        <a href="https://coachemup.github.io/Responsive-layout-site/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Responsive Layout</div>
+                                <p class="project-description">This project was built with a mobile-first layout. It
+                                    adjusts to accommodate small, medium, and large screen sizes.</p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                <!-- /project 1-->
+                <!-- project 2-->
+                <div class="col pictures">
+                    <div class="title d-lg-none text-center">Registration Form</div>
+                    <div class="project-image border border-dark">
+                        <img src="assets/project3.png" class="card-img-top project" alt="...">
+                        <a href="https://coachemup.github.io/Online-Registration-Form/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Registration Form</div>
+                                <p class="project-description">This is mobile-friendly registration form using a wide
+                                    variety of HTML form input types and attributes.</p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                  </div>
                 </div>
-             
-
+                <!-- /project 2-->
+                <!-- project 3 -->
+                <div class="col pictures">
+                    <div class="title d-lg-none text-center">Web Style</div>
+                    <div class="project-image border border-dark">
+                        <img src="assets/project4.png" class="card-img-top project" alt="...">
+                        <a href="https://coachemup.github.io/Web-Style-Guide/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Web Style</div>
+                                <p class="project-description">This project uses CSS and converting it into Sass.</p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-sass"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 3-->
+                <!-- project 4-->
+                <div class="col pictures">
+                    <div class="title d-lg-none text-center">Interactive Photo Gallery</div>
+                    <div class="project-image border border-dark">
+                        <img src="assets/project5.png" class="card-img-top project" alt="...">
+                        <a href="https://coachemup.github.io/Interactive-Photo-Gallery/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Interactive Photo Gallery</div>
+                                <p class="project-description">Using JavaScript and CSS Grid, this is a searchable photo
+                                    gallery.</p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 4-->
+                <!-- project 5-->
+                <div class="col pictures">
+                    <div class="title d-lg-none text-center">Wheel of Success</div>
+                    <div class="project-image border border-dark">
+                        <img src="assets/project6.png" class="card-img-top project" alt="...">
+                        <a href="https://coachemup.github.io/Game-Show-App/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Wheel of Success</div>
+                                <p class="project-description">This game uses JavaScript to create the Wheel of Success.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 5-->
+                <!-- project 6-->
+                <div class="col pictures">
+                    <div class="title d-lg-none text-center">Web App Dashboard</div>
+                    <div class="project-image border border-dark">
+                        <img src="assets/project7.png" class="card-img-top project" alt="...">
+                        <a href="https://coachemup.github.io/WebApp-Dashboard/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Web App Dashboard</div>
+                                <p class="project-description">A web dashboard complete with JavaScript-driven charts
+                                    and graphs.</p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 6-->
+                <!-- project 7-->
+                <div class="col pictures">
+                    <div class="title d-lg-none text-center">Employee Directory</div>
+                    <div class="project-image border border-dark">
+                        <img src="assets/project8.png" class="card-img-top project" alt="..." data-filter="javascript">
+                        <a href="https://coachemup.github.io/Employee-Directory/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Employee Directory</div>
+                                <p class="project-description">A web directory to share contact information. Using
+                                    Random User Generator API, this site grabs 12 random employees and displays their
+                                    contact information.</p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 7-->
+                <!-- project 8-->
+                <div class="col pictures">
+                    <div class="title d-lg-none text-center">Responsive Layout</div>
+                    <div class="project-image border border-dark">
+                        <img src="assets/project2.png" class="card-img-top project" alt="..." data-filter="bootstrap">
+                        <a href="https://coachemup.github.io/Responsive-layout-site/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Responsive Layout</div>
+                                <p class="project-description">This project was built with a mobile-first layout. It
+                                    adjusts to accommodate small, medium, and large screen sizes.</p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /project 8-->
+        </div>
+        <!--/container -->
     </section>
     <!-- /projects -->
 
+
+
+
+
+
+
+
+
     <!-- contact -->
     <!-- get updates / modal trigger -->
-    <section class="bg-light" id="contact">
-        <div class="container">
+    <section id="contact">
+        <div class="container-lg">
             <div>
                 <h2>Contact</h2>
+                <div>
+                    <hr class="border border-dark border-2 col-8">
+                </div>
                 <p class="lead">Got a question?</p>
             </div>
             <div class="row ">
-                <div class="col-md-8">
+                <div class="col">
                     <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                         exercitationem voluptatibus porro, hic asperiores fuga illo voluptates obcaecati deleniti
                         veritatis sunt saepe quasi deserunt ex ipsum. Est possimus, aspernatur, vitae eligendi rem odit
@@ -273,6 +448,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+         
+        });
+    </script>
 
     <script src="js/app.js"></script>
 

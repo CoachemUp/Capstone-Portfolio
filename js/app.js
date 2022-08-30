@@ -1,3 +1,4 @@
+
 //Custom auto type 
 var typed = new Typed(".auto-type", {
     strings: ["Designer", "Developer", "Freelancer", "Teacher", "Coach", "Dad"],
@@ -33,6 +34,4 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-
-//filter of projects
 
