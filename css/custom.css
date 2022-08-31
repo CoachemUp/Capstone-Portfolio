@@ -1,23 +1,28 @@
-body {
-  background-color: white;
-  color: black;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-.modal-body,
-.modal-title {
-  color: black;
+/* navbar */
+.nav-link,
+.navbar-brand,
+#footer {
+  color: dodgerblue;
 }
 .nav-item {
   cursor: pointer;
 }
-
+/* modal */
+.modal-body,
+.modal-title,
+#subject {
+  color: #003366;
+}
+.btn {
+  color: dodgerblue;
+}
+/* p color */
+body {
+  color: #003366;
+}
 /* Custom auto type styles */
 span {
-  color: brown;
+  color: dodgerblue;
 }
 .auto-type {
   text-decoration: underline;
@@ -41,6 +46,7 @@ span {
   bottom: 20px;
   right: 20px;
   display: none;
+  color: dodgerblue;
 }
 
 /* project overlay */
@@ -99,10 +105,83 @@ span {
   object-fit: cover;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+/* divider */
+.divider {
+  /* minor cosmetics */
+  display: table;
+  font-size: 35px;
+  text-align: center;
+  width: 75%; /* divider width */
+  margin: 20px auto; /* spacing above/below */
+  font-weight: 500;
+}
+
+.divider span {
+  display: table-cell;
+  position: relative;
+}
+.divider span:first-child,
+.divider span:last-child {
+  width: 50%;
+  top: 25px; /* adjust vertical align */
+  -moz-background-size: 100% 5px; /* line width */
+  background-size: 100% 5px; /* line width */
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+.divider span:first-child {
+  /* color changes in here */
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(transparent),
+    to(dodgerblue)
+  );
+  background-image: -webkit-linear-gradient(180deg, transparent, dodgerblue);
+  background-image: -moz-linear-gradient(180deg, transparent, dodgerblue);
+  background-image: -o-linear-gradient(180deg, transparent, dodgerblue);
+  background-image: linear-gradient(90deg, transparent, dodgerblue);
+}
+
+.divider span:nth-child(2) {
+  color: dodgerblue;
+  padding: 0px 5px;
+  width: auto;
+  white-space: nowrap;
+}
+
+.divider span:last-child {
+  /* color changes in here */
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(dodgerblue),
+    to(transparent)
+  );
+  background-image: -webkit-linear-gradient(180deg, dodgerblue, transparent);
+  background-image: -moz-linear-gradient(180deg, dodgerblue, transparent);
+  background-image: -o-linear-gradient(180deg, dodgerblue, transparent);
+  background-image: linear-gradient(90deg, dodgerblue, transparent);
+}
+
+
+
+form {
+  color: dodgerblue;
+  background-color: rgb(198, 195, 196);
+  border-radius: 5%;
+}
+
+
+/* media query between mobil and tablet */
+@media (min-width: 321px) and (max-width: 769px) {
   .pictures {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 245px;
+    justify-content: space-between;
   }
 }
