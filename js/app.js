@@ -1,4 +1,3 @@
-
 //Custom auto type 
 var typed = new Typed(".auto-type", {
     strings: ["Designer", "Developer", "Freelancer", "Teacher", "Coach", "Dad"],
@@ -8,10 +7,17 @@ var typed = new Typed(".auto-type", {
     underline: true
 });
 
+
+
+
 //Back to top button
 let mybutton = document.getElementById("btn-back-to-top");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
+
+
+
+// When the user scrolls down 50px from the top of the document, show the button
 window.onscroll = function () {
     scrollFunction();
 };
@@ -26,6 +32,9 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
+
+
+
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 
@@ -35,3 +44,7 @@ function backToTop() {
 }
 
 
+function functionPrint() {
+    document.getElementById("nonPrintable").className += "noPrint";
+    window.print();
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 323.73 405.85">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 35px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #231f20;
+        stroke: #333;
+      }
+
+      .cls-4 {
+        font-family: Cambria-Bold, Cambria;
+        font-size: 93px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #4c86c6;
+      }
+    </style>
+  </defs>
+  <path class="cls-5" d="M205.39,6.56c-14.23-4.27-29.27-6.56-44.83-6.56C71.89,0,0,74.38,0,166.13s71.89,166.13,160.57,166.13c15.56,0,30.6-2.29,44.83-6.56"/>
+  <path class="cls-1" d="M210.76,0C110.45,0,29.13,72.82,29.13,162.65s79.87,161.35,178.95,162.64"/>
+  <circle class="cls-3" cx="189.76" cy="166.69" r="133.47"/>
+  <g>
+    <line class="cls-2" x1="56.29" y1="120.77" x2="197.74" y2="120.77"/>
+    <line class="cls-2" x1="56.29" y1="166.69" x2="175.55" y2="166.69"/>
+    <line class="cls-2" x1="56.29" y1="212.62" x2="197.74" y2="212.62"/>
+  </g>
+  <text class="cls-4" transform="translate(232.27 101.73) rotate(90) scale(1.39 1)"><tspan x="0" y="0">««</tspan></text>
+</svg>

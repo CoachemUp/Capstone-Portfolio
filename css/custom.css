@@ -18,7 +18,7 @@
 }
 /* p color */
 body {
-  color: #003366;
+  color: #010911;
 }
 /* Custom auto type styles */
 span {
@@ -175,7 +175,12 @@ form {
   border-radius: 5%;
 }
 
-
+img {
+height: 100px;
+width: 100px;
+ 
+  border-radius: 5%;
+}
 /* media query between mobil and tablet */
 @media (min-width: 321px) and (max-width: 769px) {
   .pictures {
