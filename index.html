@@ -8,102 +8,100 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- fontawesome -->
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2eee13a953.js" crossorigin="anonymous"></script>
 
     <!-- custom css -->
     <link href="css/custom.css" rel="stylesheet" />
+
     <!-- print resume  -->
-    <style type="text/css" media="print">
-        .noPrint {
-            display: none;
-        }
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.js"
+        integrity="sha512-JO0HvUFRjsan1fqrOEn9XWzZj/+/0pyXHy6NbBmRocxN9EdUvyvgwwnd23JeQBNetqESMVBDbVHfN5ZveTc0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>Capstone Portfolio</title>
 </head>
 
 <body>
-    <div id="nonPrintable">
-        <div class="con">
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md ">
+        <div class="container-lg">
+            <!-- navbar brand / title -->
+            <a class="navbar-brand" data-aos="fade-right" data-aos-delay="400" href="#home">
+                <span class="fw-bold">CoachEmUp</span>
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="100">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="300">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
 
 
-
-            <!-- navbar -->
-            <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-                <div class="container-lg">
-                    <!-- navbar brand / title -->
-                    <a class="navbar-brand" data-aos="fade-right" data-aos-delay="400" href="#home">
-                        <span class="fw-bold">CoachEmUp</span>
-
-                    </a>
-                    <!-- toggle button for mobile nav -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- navbar links -->
-                    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item" data-aos="fade-up" data-aos-delay="100">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-delay="100">
-                                <a class="nav-link" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
-                                <a class="nav-link" href="#resume">Resume</a>
-                            </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-delay="300">
-                                <a class="nav-link" href="#portfolio">Portfolio</a>
-                            </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
+    <!-- jumbotron -->
+    <section class="hero" id="home">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-center" id="divheight">
+                <div class="col-md-6" data-aos="zoom-in-right" data-aos-delay="750">
+                    <div class="display-2 text-light">Jeff Cobb</div>
+                    <div class="display-5 text-muted">
+                        I'm a <span class="auto-type"></span>
                     </div>
                 </div>
-            </nav>
-            <!-- navbar -->
+                <div class="col-md-5 d-none d-md-block" data-aos="zoom-in-left" data-aos-delay="750">
+                    <img src="/assets/octhead.svg" alt="Jeff Cobb" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- /jumbotron -->
 
-            <!-- jumbotron -->
-            <section class="hero" id="home">
-                <div class="container-lg ">
-                    <div class="row align-items-center justify-content-center" id="divheight">
-                        <div class="col-md-8" data-aos="zoom-in-right" data-aos-delay="750">
-                            <div class="display-2 text-light">Jeff Cobb</div>
-                            <div class="display-5 text-muted">
-                                I'm a <span class="auto-type"></span>
-                            </div>
-                        </div>
+
+    <!-- about -->
+    <section id="about">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col">
+                    <div class="divider">
+                        <span data-aos="slide-right"></span><span data-aos="fade-up">About</span><span
+                            data-aos="slide-left"></span>
                     </div>
                 </div>
-            </section>
-            <!-- /jumbotron -->
-
-            <!-- about -->
-            <section id="about">
-                <div class="container-lg">
-                    <div class="row">
-                        <div class="col">
-                            <div class="divider"><span data-aos="slide-right"></span><span
-                                    data-aos="fade-up">About</span><span data-aos="slide-left"></span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-none d-sm-none d-md-block">
-                                <img src="/assets/HeadShot.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="col text-center">
-                                <h5>Who is Jeff Cobb?</h5>
-                                <p>
-                                    That is a good question and too much information to place here. If you want to
-                                    explore
-                                    the journey that got me to this point, follow the button below.
-                                </p>
-
+            </div>
+            <!-- who is jeff -->
+            <div class="row">
+                <div class="col-sm-5 col-lg-5 text-center" data-aos="zoom-in-right" data-aos-delay="500">
+                    <div class="card border-0 g-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Who is Jeff?</h5>
+                            <p class="card-text">That is a good question and too much information to place here.
+                                If you want to explore the journey that got me to this point,
+                                follow the button below.
+                            </p>
+                            <div class="card-footer">
                                 <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
                                     data-bs-target="#offcanvasDark" aria-controls="offcanvasDark">
                                     Explore the Journey
@@ -112,460 +110,471 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- /about -->
+                <!-- /who is jeff -->
 
-            <!-- offcanvas -->
-            <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvasDark"
-                aria-labelledby="offcanvasDarkLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkLabel">Who is Jeff?</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close">
-                    </button>
+
+                <!-- divider -->
+                <div class="col d-none d-sm-block" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="outer">
+                        <div class="inner"></div>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                    <p class="fs-6">
-                        Who is Jeff Cobb? I'm from Jacksonville NC, I have 7 children and 1 grandchild.
-                        I have had a lot of titles in my life-time. I started my long journey in 1990,
-                        after spending several years trying to figure this thing called "life" out, I
-                        entered the workforce. I have been a police officer, armoured crewman,
-                        restaurant manager and teacher. In 2000 I entered the teaching/coaching
-                        profession that has lasted the last 20 plus years. As a teacher I had the
-                        pleasure to teach in many different areas, business, technology, digital arts,
-                        engineering and my favorite, computer science. While completing my masters
-                        degree I was introduced to Web Design, and the passion began. The last few years
-                        of my profession I spent teaching young adults the joy of coding, using
-                        different platforms to guide them on their journey.
+                <!-- /divider -->
+
+
+                <!-- skills -->
+                <div class="col-sm-5 col-lg-5 text-center">
+                    <div class="card border-0 g-0" data-aos="zoom-in-left" data-aos-delay="500">
+                        <div class="card-body">
+                            <h5 class="card-title">Skills</h5>
+                            <p class="card-text"> I am just starting my journey down the path to become a
+                                Front-End-Web Developer. I have a lot to learn and plan on
+                                furthering my skills to offer my best to my employer.
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-evenly">
+                                <span style="color: dodgerblue">
+                                    <i class="fa-brands fa-html5 fa-2x"></i>
+                                </span>
+
+                                <span style="color: #1e90ff">
+                                    <i class="fa-brands fa-css3 fa-2x"></i>
+                                </span>
+
+                                <span style="color: dodgerblue">
+                                    <i class="fa-brands fa-bootstrap fa-2x"></i>
+                                </span>
+
+                                <span style="color: dodgerblue">
+                                    <i class="fa-brands fa-js fa-2x"></i>
+                                </span>
+
+                                <span style="color: dodgerblue">
+                                    <i class="fa-brands fa-sass fa-2x"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /skills -->
+            </div>
+    </section>
+    <!-- /about -->
+
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvasDark"
+        aria-labelledby="offcanvasDarkLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkLabel">Who is Jeff?</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="fs-6">
+                Who is Jeff Cobb? I'm from Jacksonville NC, I have 7 children and 1
+                grandchild. I have had a lot of titles in my life-time. I started my
+                long journey in 1990, after spending several years trying to figure
+                this thing called "life" out, I entered the workforce. I have been a
+                police officer, armoured crewman, restaurant manager and teacher. In
+                2000 I entered the teaching/coaching profession that has lasted the
+                last 20 plus years. As a teacher I had the pleasure to teach in many
+                different areas, business, technology, digital arts, engineering and
+                my favorite, computer science. While completing my masters degree I
+                was introduced to Web Design, and the passion began. The last few
+                years of my profession I spent teaching young adults the joy of
+                coding, using different platforms to guide them on their journey.
+            </p>
+            <p>
+                After retiring as a teacher in 2020 is stumbled around trying to
+                figure out what was the next chapter. That brought me to believe what
+                my father once told me. "IF you like your job you never work a day of
+                your life". I thought that it was time to follow what has become a
+                passion, Web design. I entered into Treehouse's Front End Web
+                Development Techdegree and have aspirations of becoming a
+                Front-End-Web Developer. I realize that it won't be easy and that I
+                have much more to learn, but I have never turned down a good
+                challenge. Thanks for visiting my site and please feel free to contact
+                me with any questions.
+            </p>
+        </div>
+    </div>
+    <!-- /offcanvas -->
+
+
+
+    <!-- resume -->
+    <section id="resume">
+        <div class="container-lg">
+            <div class="divider">
+                <span data-aos="slide-right"></span>
+                <span data-aos="fade-up">Resume</span>
+                <span data-aos="slide-left"></span>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">
+                        I have included my most up to date resume. Feel free to download
+                        or print for your convenience. If there are any questions send me
+                        an email.
                     </p>
-                    <p>
-                        After retiring as a teacher in 2020 is stumbled around trying to figure out what
-                        was the next chapter. That brought me to believe what my father once told me.
-                        "IF you like your job you never work a day of your life". I thought that it was
-                        time to follow what has become a passion, Web design. I entered into Treehouse's
-                        Front End Web Development Techdegree and have aspirations of becoming a
-                        Front-End-Web Developer. I realize that it won't be easy and that I have much
-                        more to learn, but I have never turned down a good challenge. Thanks for
-                        visiting my site and please feel free to contact me with any questions.
-                    </p>
+                    <!-- Button trigger modal -->
+                    <div class="d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                                    Resume
+                                </button </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- /offcanvas -->
-
-            <!-- skills -->
-            <section id="skills">
-                <div class="container-lg">
-                    <div class="divider"><span data-aos="slide-right"></span><span data-aos="fade-up">Skills</span><span
-                            data-aos="slide-left"></span></div>
-                    <div class="row justify-content-between">
-                        <div class="col">
-                            <p class="text-center">
-                                I am just starting my journey down the path to become a Front-End-Web Developer. I have
-                                a
-                                lot to
-                                learn and plan on furthering my skills to offer the best experience for my employer. I
-                                have
-                                listed the skills that I have learned so far during my time at Treehouse.
-                            </p>
-                        </div>
-                        <!-- skill icons -->
-                        <div class="d-flex justify-content-center">
-                            <div class="row">
-                                <div class="col">
-                                    <span style="color: dodgerblue;">
-                                        <i class="fa-brands fa-html5 fa-5x"></i>
-                                    </span>
-
-                                    <span style="color: #1e90ff;">
-                                        <i class="fa-brands fa-css3 fa-5x"></i>
-                                    </span>
-
-                                    <span style="color: dodgerblue;">
-                                        <i class="fa-brands fa-bootstrap fa-5x"></i>
-                                    </span>
-
-                                    <span style="color: dodgerblue;">
-                                        <i class="fa-brands fa-js fa-5x"></i>
-                                    </span>
-
-                                    <span style="color: dodgerblue;">
-                                        <i class="fa-brands fa-sass fa-5x"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /skills -->
-
-            <!-- resume -->
-            <section id="resume">
-                <div class="container-lg">
-                    <div class="divider"><span data-aos="slide-right"></span><span data-aos="fade-up">Resume</span><span
-                            data-aos="slide-left"></span>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <p class="text-center">
-                                I have included my most up to date resume. Feel free to download or print for your
-                                convenience. If there are any questions send me an email.
-                            </p>
-                            <!-- Button trigger modal -->
-                            <div class="d-flex justify-content-center">
-                                <div class="row">
-                                    <div class="col">
-                                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal"
-                                            data-bs-target="#jeff">
-                                            Resume
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- /resume -->
-
-            <!-- projects -->
-            <section id="portfolio" class="bg-light">
-                <div class="container-lg">
-                    <div class="divider"><span data-aos="slide-right"></span><span
-                            data-aos="fade-up">Portfolio</span><span data-aos="slide-left"></span></div>
-                    <div class="row ">
-                        <div>
-
-                            <p class="text-center">
-                                Below you will find the projects that I completed while studying at Treehouse. Many more
-                                to
-                                come!!
-                            </p>
-                        </div>
-
-                    </div>
-                    <!-- project 1 -->
-                    <div
-                        class="row row-cols-1 row-cols-md-3 row-cols-xxl-4 g-4 align-items-center justify-content-center">
-                        <div class="col pictures">
-                            <div class="title d-lg-none d-md-none text-center">Responsive Layout</div>
-                            <div class="project-image">
-                                <img src="assets/project2.png" class="card-img-top project" alt="..." data-aos="flip-up"
-                                    data-aos-delay="750">
-                                <a href="https://coachemup.github.io/Responsive-layout-site/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-title">Responsive Layout</div>
-                                        <p class="project-description">This project was built with a mobile-first
-                                            layout. It
-                                            adjusts to accommodate small, medium, and large screen sizes.</p>
-                                        <div class="card-footer">
-                                            <i class="fa-brands fa-html5"></i>
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /project 1-->
-                        <!-- project 2-->
-                        <div class="col pictures ">
-                            <div class="title d-lg-none d-md-none text-center">Registration Form</div>
-                            <div class="project-image">
-                                <img src="assets/project3.png" data-aos="flip-left" data-aos-delay="750"
-                                    class="card-img-top project" alt="...">
-                                <a href="https://coachemup.github.io/Online-Registration-Form/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-title">Registration Form</div>
-                                        <p class="project-description">This is mobile-friendly registration form using a
-                                            wide
-                                            variety of HTML form input types and attributes.</p>
-                                        <div class="card-footer">
-                                            <i class="fa-brands fa-html5"></i>
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /project 2-->
-                        <!-- project 3 -->
-                        <div class="col pictures">
-                            <div class="title d-lg-none d-md-none text-center">Web Style</div>
-                            <div class="project-image">
-                                <img src="assets/project4.png" data-aos="flip-left" data-aos-delay="750"
-                                    class="card-img-top project" alt="...">
-                                <a href="https://coachemup.github.io/Web-Style-Guide/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-title">Web Style</div>
-                                        <p class="project-description">This project uses CSS and converting it into
-                                            Sass.
-                                        </p>
-                                        <div class="card-footer">
-                                            <i class="fa-brands fa-html5"></i>
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                            <i class="fa-brands fa-sass"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /project 3-->
-                        <!-- project 4-->
-                        <div class="col pictures">
-                            <div class="title d-lg-none d-md-none text-center">Interactive Photo Gallery</div>
-                            <div class="project-image">
-                                <img src="assets/project5.png" data-aos="flip-left" data-aos-delay="750"
-                                    class="card-img-top project" alt="...">
-                                <a href="https://coachemup.github.io/Interactive-Photo-Gallery/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-title">Interactive Photo Gallery</div>
-                                        <p class="project-description">Using JavaScript and CSS Grid, this is a
-                                            searchable
-                                            photo
-                                            gallery.</p>
-                                        <div class="card-footer">
-                                            <i class="fa-brands fa-html5"></i>
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                            <i class="fa-brands fa-js"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /project 4-->
-                        <!-- project 5-->
-                        <div class="col pictures">
-                            <div class="title d-lg-none d-md-none text-center">Wheel of Success</div>
-                            <div class="project-image">
-                                <img src="assets/project6.png" data-aos="flip-left" data-aos-delay="750"
-                                    class="card-img-top project" alt="...">
-                                <a href="https://coachemup.github.io/Game-Show-App/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-title">Wheel of Success</div>
-                                        <p class="project-description">This game uses JavaScript to create the Wheel of
-                                            Success.
-                                        </p>
-                                        <div class="card-footer">
-                                            <i class="fa-brands fa-html5"></i>
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                            <i class="fa-brands fa-js"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /project 5-->
-                        <!-- project 6-->
-                        <div class="col pictures">
-                            <div class="title d-lg-none d-md-none text-center">Web App Dashboard</div>
-                            <div class="project-image">
-                                <img src="assets/project7.png" data-aos="flip-left" data-aos-delay="750"
-                                    class="card-img-top project" alt="...">
-                                <a href="https://coachemup.github.io/WebApp-Dashboard/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-title">Web App Dashboard</div>
-                                        <p class="project-description">A web dashboard complete with JavaScript-driven
-                                            charts
-                                            and graphs.</p>
-                                        <div class="card-footer">
-                                            <i class="fa-brands fa-html5"></i>
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                            <i class="fa-brands fa-js"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /project 6-->
-                        <!-- project 7-->
-                        <div class="col pictures">
-                            <div class="title d-lg-none d-md-none text-center">Employee Directory</div>
-                            <div class="project-image">
-                                <img src="assets/project8.png" data-aos="flip-left" data-aos-delay="750"
-                                    class="card-img-top project" alt="..." data-filter="javascript">
-                                <a href="https://coachemup.github.io/Employee-Directory/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-title">Employee Directory</div>
-                                        <p class="project-description">A web directory to share contact information.
-                                            Using
-                                            Random User Generator API, this site grabs 12 random employees and displays
-                                            their
-                                            contact information.</p>
-                                        <div class="card-footer">
-                                            <i class="fa-brands fa-html5"></i>
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                            <i class="fa-brands fa-js"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /project 7-->
-                        <!-- project 8-->
-                        <div class="col pictures">
-                            <div class="title d-lg-none d-md-none text-center">Responsive Layout</div>
-                            <div class="project-image">
-                                <img src="assets/project2.png" data-aos="flip-left" data-aos-delay="750"
-                                    class="card-img-top project" alt="..." data-filter="bootstrap">
-                                <a href="https://coachemup.github.io/Responsive-layout-site/" target="_blank">
-                                    <div class="project-overlay">
-                                        <div class="project-title">Responsive Layout</div>
-                                        <p class="project-description">This project was built with a mobile-first
-                                            layout. It
-                                            adjusts to accommodate small, medium, and large screen sizes.</p>
-                                        <div class="card-footer">
-                                            <i class="fa-brands fa-html5"></i>
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                            <i class="fa-brands fa-js"></i>
-                                            <i class="fa-brands fa-bootstrap"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /project 8-->
-                </div>
-            </section>
-            <!-- /projects -->
-
-            <!-- contact -->
-            <section id="contact">
-                <div class="container-lg">
-                    <div class="divider"><span data-aos="slide-right"></span><span
-                            data-aos="fade-up">Contact</span><span data-aos="slide-left"></span></div>
-                    <div>
-                        <div class="row">
-                            <div class="col-4">
-                                <p class="lead text-center">Got a question?</p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <p class="text-center">
-                                I would love to hear from you. If you have a question please send me an email. I would
-                                love
-                                to
-                                hear from you.
-                            </p>
-                        </div>
-                        <form>
-                            <div class="col-md-4">
-                                <label for="validationDefault01" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="validationDefault01" required>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="validationDefault02" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="validationDefault02" required>
-                            </div>
-                            <div class=" col-md-4 mb-3">
-                                <label for="validationEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="validationEmail"
-                                    aria-describedby="emailHelp" required>
-                                <div id="emailHelp" class="form-text">I'll never share your email with anyone else.
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="validationTextarea" class="form-label">Your Message</label>
-                                <textarea class="form-control" id="validationTextarea"
-                                    placeholder="type your question here" required></textarea>
-                            </div>
-
-                            <div class="col-md-4">
-                                <button class="btn btn-secondary" type="submit">Email Me</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <!-- /contact -->
-
-
-
-
-
-
-            <!-- footer -->
-            <footer class="bg-dark text-center ">
-                <!-- Grid container -->
-                <div class="container p-4 pb-0">
-                    <!-- Section: Social media -->
-                    <section class="mb-4">
-
-                        <!-- Facebook -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/jeff.cobb.940/"
-                            role="button" target="_blank">
-                            <span style="color: dodgerblue;">
-                                <i class="fab fa-facebook-f"></i></a>
-                        </span>
-
-                        <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1"
-                            href="https://www.instagram.com/relentlesspursuitofhappiness/" role="button"
-                            target="_blank">
-                            <span style="color: dodgerblue;">
-                                <i class="fab fa-instagram"></i></a>
-                        </span>
-
-                        <!-- Linkedin -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com/in/cobb-jeff/"
-                            role="button" target="_blank">
-                            <span style="color: dodgerblue;">
-                                <i class="fab fa-linkedin-in"></i></a>
-                        </span>
-
-                        <!-- Github -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/CoachemUp"
-                            target="_blank" role="button">
-                            <span style="color: dodgerblue;">
-                                <i class="fab fa-github"></i></a>
-                        </span>
-                    </section>
-                </div>
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color: dodgerblue;">
-                    © 2022 Copyright: Jeff Cobb
-                </div>
-                <!-- Copyright -->
-            </footer>
-            <!-- /footer -->
-
-            <!-- Back to top button -->
-            <button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            <!-- Back to top button -->
-        </div>
-    </div> <!-- nonPrintable -->
-
-
+    </section>
     <!-- modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="jeff" tabindex="-1" aria-labelledby="resume" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" >Modal title</h5>
+                    <h5 class="modal-title" id="modal-title">Resume</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-secondary" onclick="functionPrint()"
-                        data-bs-dismiss="modal">Print</button>
+                <div class="modal-body img-fluid">
+                    <iframe id="pdf-js-viewer" src="assets/Cobb_J_Res_9-2022.pdf" title="webviewer" width="100%"
+                        height="100%">
+                    </iframe>
                 </div>
             </div>
         </div>
     </div>
+    <!-- /modal -->
+    <!-- /resume -->
+
+    <!-- projects -->
+    <section id="portfolio" class="bg-light">
+        <div class="container-lg">
+            <div class="divider">
+                <span data-aos="slide-right"></span><span data-aos="fade-up">Portfolio</span><span
+                    data-aos="slide-left"></span>
+            </div>
+            <div class="row">
+                <div>
+                    <p class="text-center">
+                        Below you will find the projects that I completed while studying
+                        at Treehouse. Many more to come!!
+                    </p>
+                </div>
+            </div>
+            <!-- project 1 -->
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xxl-4 g-4 align-items-center justify-content-center">
+                <div class="col pictures">
+                    <div class="title d-lg-none d-md-none text-center">
+                        Responsive Layout
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project2.png" class="card-img-top project" alt="..." data-aos="flip-up"
+                            data-aos-delay="750" />
+                        <a href="https://coachemup.github.io/Responsive-layout-site/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Responsive Layout</div>
+                                <p class="project-description">
+                                    This project was built with a mobile-first layout. It
+                                    adjusts to accommodate small, medium, and large screen
+                                    sizes.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 1-->
+                <!-- project 2-->
+                <div class="col pictures">
+                    <div class="title d-lg-none d-md-none text-center">
+                        Registration Form
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project3.png" data-aos="flip-left" data-aos-delay="750"
+                            class="card-img-top project" alt="..." />
+                        <a href="https://coachemup.github.io/Online-Registration-Form/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Registration Form</div>
+                                <p class="project-description">
+                                    This is mobile-friendly registration form using a wide
+                                    variety of HTML form input types and attributes.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 2-->
+                <!-- project 3 -->
+                <div class="col pictures">
+                    <div class="title d-lg-none d-md-none text-center">Web Style</div>
+                    <div class="project-image">
+                        <img src="assets/project4.png" data-aos="flip-left" data-aos-delay="750"
+                            class="card-img-top project" alt="..." />
+                        <a href="https://coachemup.github.io/Web-Style-Guide/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Web Style</div>
+                                <p class="project-description">
+                                    This project uses CSS and converting it into Sass.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-sass"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 3-->
+                <!-- project 4-->
+                <div class="col pictures">
+                    <div class="title d-lg-none d-md-none text-center">
+                        Interactive Photo Gallery
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project5.png" data-aos="flip-left" data-aos-delay="750"
+                            class="card-img-top project" alt="..." />
+                        <a href="https://coachemup.github.io/Interactive-Photo-Gallery/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Interactive Photo Gallery</div>
+                                <p class="project-description">
+                                    Using JavaScript and CSS Grid, this is a searchable photo
+                                    gallery.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 4-->
+                <!-- project 5-->
+                <div class="col pictures">
+                    <div class="title d-lg-none d-md-none text-center">
+                        Wheel of Success
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project6.png" data-aos="flip-left" data-aos-delay="750"
+                            class="card-img-top project" alt="..." />
+                        <a href="https://coachemup.github.io/Game-Show-App/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Wheel of Success</div>
+                                <p class="project-description">
+                                    This game uses JavaScript to create the Wheel of Success.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 5-->
+                <!-- project 6-->
+                <div class="col pictures">
+                    <div class="title d-lg-none d-md-none text-center">
+                        Web App Dashboard
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project7.png" data-aos="flip-left" data-aos-delay="750"
+                            class="card-img-top project" alt="..." />
+                        <a href="https://coachemup.github.io/WebApp-Dashboard/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Web App Dashboard</div>
+                                <p class="project-description">
+                                    A web dashboard complete with JavaScript-driven charts and
+                                    graphs.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 6-->
+                <!-- project 7-->
+                <div class="col pictures">
+                    <div class="title d-lg-none d-md-none text-center">
+                        Employee Directory
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project8.png" data-aos="flip-left" data-aos-delay="750"
+                            class="card-img-top project" alt="..." data-filter="javascript" />
+                        <a href="https://coachemup.github.io/Employee-Directory/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Employee Directory</div>
+                                <p class="project-description">
+                                    A web directory to share contact information. Using Random
+                                    User Generator API, this site grabs 12 random employees and
+                                    displays their contact information.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /project 7-->
+                <!-- project 8-->
+                <div class="col pictures">
+                    <div class="title d-lg-none d-md-none text-center">
+                        Responsive Layout
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/project2.png" data-aos="flip-left" data-aos-delay="750"
+                            class="card-img-top project" alt="..." data-filter="bootstrap" />
+                        <a href="https://coachemup.github.io/Responsive-layout-site/" target="_blank">
+                            <div class="project-overlay">
+                                <div class="project-title">Responsive Layout</div>
+                                <p class="project-description">
+                                    This project was built with a mobile-first layout. It
+                                    adjusts to accommodate small, medium, and large screen
+                                    sizes.
+                                </p>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /project 8-->
+        </div>
+    </section>
+    <!-- /projects -->
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="divider">
+                <span data-aos="slide-right"></span><span data-aos="fade-up">Contact</span><span
+                    data-aos="slide-left"></span>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-4">
+                    <p class="lead text-center">Got a question?</p>
+                    <p class="text-center">
+                        I would love to hear from you. If you have a question please send
+                        me an email. I would love to hear from you.
+                    </p>
+                </div>
 
 
 
 
+                <!-- form -->
+
+                <div class="col-8">
+                    <form>
+                        <label for="validationDefault01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01" required />
 
 
+                        <label for="validationDefault02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" required />
+
+
+                        <label for="validationEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="validationEmail" aria-describedby="emailHelp"
+                            required />
+                        <div id="emailHelp" class="form-text">
+                            I'll never share your email with anyone else.
+                        </div>
+
+
+                        <label for="validationTextarea" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="validationTextarea" placeholder="type your question here"
+                            required></textarea>
+
+                        <button class="btn btn-secondary" type="submit">Email Me</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <!-- /contact -->
+
+    <!-- footer -->
+    <footer class="bg-dark text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <span style="color: dodgerblue">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/jeff.cobb.940/"
+                        role="button" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </span>
+
+                <!-- Instagram -->
+                <span style="color: dodgerblue">
+                    <a class="btn btn-outline-light btn-floating m-1"
+                        href="https://www.instagram.com/relentlesspursuitofhappiness/" role="button" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </span>
+
+                <!-- Linkedin -->
+                <span style="color: dodgerblue">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com/in/cobb-jeff/"
+                        role="button" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </span>
+
+                <!-- Github -->
+                <span style="color: dodgerblue">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/CoachemUp"
+                        target="_blank" role="button">
+                        <i class="fab fa-github"></i></a>
+                </span>
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color: dodgerblue">
+            © 2022 Copyright: Jeff Cobb
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- /footer -->
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Back to top button -->
+    <!-- nonPrintable -->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -574,11 +583,8 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-
-        });
+        AOS.init({});
     </script>
-
     <script src="js/app.js"></script>
 
     <!--/container -->

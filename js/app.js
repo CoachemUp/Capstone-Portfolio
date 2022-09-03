@@ -43,8 +43,5 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+// modal print function
 
-function functionPrint() {
-    document.getElementById("nonPrintable").className += "noPrint";
-    window.print();
-}
