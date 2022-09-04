@@ -214,9 +214,9 @@
                 <span data-aos="slide-left"></span>
             </div>
 
-            <div class="row">
-                <div class="col">
-                    <p class="text-center">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <p class="text-center" data-aos="zoom-in-up" data-aos-delay="500">
                         I have included my most up to date resume. Feel free to download
                         or print for your convenience. If there are any questions send me
                         an email.
@@ -225,8 +225,9 @@
                     <div class="d-flex justify-content-center">
                         <div class="row">
                             <div class="col">
-                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#reg-modal">
-                                    Resume
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#reg-modal"
+                                    data-aos="zoom-in-up" data-aos-delay="500">
+                                    My Resume
                                 </button </div>
                             </div>
                         </div>
@@ -236,17 +237,17 @@
     </section>
     <!-- modal -->
     <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog  modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modal-title">Resume</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body img-fluid">
+                <civ class="modal-body">
                     <iframe id="pdf-js-viewer" src="assets/Cobb_J_Res_9-2022.pdf" title="webviewer" width="100%"
-                        height="100%">
+                        height="100%" frameborder="0">
                     </iframe>
-                </div>
+                </civ>
             </div>
         </div>
     </div>
@@ -255,14 +256,14 @@
 
     <!-- projects -->
     <section id="portfolio" class="bg-light">
-        <div class="container-lg">
+        <div class="container-lg mb-5">
             <div class="divider">
                 <span data-aos="slide-right"></span><span data-aos="fade-up">Portfolio</span><span
                     data-aos="slide-left"></span>
             </div>
             <div class="row">
                 <div>
-                    <p class="text-center">
+                    <p class="text-center" data-aos="zoom-in-up" data-aos-delay="500">
                         Below you will find the projects that I completed while studying
                         at Treehouse. Many more to come!!
                     </p>
@@ -446,15 +447,13 @@
                         Responsive Layout
                     </div>
                     <div class="project-image">
-                        <img src="assets/project2.png" data-aos="flip-left" data-aos-delay="750"
-                            class="card-img-top project" alt="..." data-filter="bootstrap" />
-                        <a href="https://coachemup.github.io/Responsive-layout-site/" target="_blank">
+                        <img src="assets/Capstone-Project.png" data-aos="flip-left" data-aos-delay="750"
+                            class="card-img-top project img-fluid" alt="..." data-filter="bootstrap" />
+                      
                             <div class="project-overlay">
-                                <div class="project-title">Responsive Layout</div>
+                                <div class="project-title">Capstone Portfolio</div>
                                 <p class="project-description">
-                                    This project was built with a mobile-first layout. It
-                                    adjusts to accommodate small, medium, and large screen
-                                    sizes.
+                                   This is the site that you are on. I built this to showcase the work created in the Techdegree program at Treehouse.  
                                 </p>
                                 <div class="card-footer">
                                     <i class="fa-brands fa-html5"></i>
@@ -474,48 +473,40 @@
 
     <!-- contact -->
     <section id="contact">
-        <div class="container-lg">
+        <div class="container-lg mb-5">
             <div class="divider">
                 <span data-aos="slide-right"></span><span data-aos="fade-up">Contact</span><span
                     data-aos="slide-left"></span>
             </div>
 
             <div class="row align-items-center justify-content-center">
-                <div class="col-4">
+                <div class=" col-sm-6 p-5" data-aos="zoom-in-up" data-aos-delay="500">
                     <p class="lead text-center">Got a question?</p>
-                    <p class="text-center">
+                    <p class="text-center" data-aos="zoom-in-up" data-aos-delay="500">
                         I would love to hear from you. If you have a question please send
                         me an email. I would love to hear from you.
                     </p>
                 </div>
 
-
-
-
                 <!-- form -->
-
-                <div class="col-8">
+                <div class="col-sm-6" data-aos="zoom-in-up" data-aos-delay="500">
                     <form>
-                        <label for="validationDefault01" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="validationDefault01" required />
-
-
-                        <label for="validationDefault02" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="validationDefault02" required />
-
-
-                        <label for="validationEmail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="validationEmail" aria-describedby="emailHelp"
-                            required />
-                        <div id="emailHelp" class="form-text">
-                            I'll never share your email with anyone else.
+                        <!-- Name input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-control" id="name" type="text" placeholder="Name" required/>
                         </div>
-
-
-                        <label for="validationTextarea" class="form-label">Your Message</label>
-                        <textarea class="form-control" id="validationTextarea" placeholder="type your question here"
-                            required></textarea>
-
+                        <!-- Email address input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="emailAddress">Email Address</label>
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" required />
+                        </div>
+                        <!-- Message input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-control" id="message" type="text" placeholder="Message" required></textarea>
+                        </div>
+                        <!-- Form submit button -->
                         <button class="btn btn-secondary" type="submit">Email Me</button>
                     </form>
                 </div>
@@ -532,7 +523,7 @@
                 <!-- Facebook -->
                 <span style="color: dodgerblue">
                     <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/jeff.cobb.940/"
-                        role="button" target="_blank">
+                        role="button" target="_blank" >
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </span>

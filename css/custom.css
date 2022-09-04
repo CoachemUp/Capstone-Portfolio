@@ -8,14 +8,10 @@
   cursor: pointer;
 }
 /* modal */
-.modal-body,
-.modal-title,
-#subject {
+.modal-title {
   color: #003366;
 }
-.modal-content {
-  line-height: 1.6;
-}
+
 .btn {
   color: rgb(129, 192, 255);
   font-weight: bold;
@@ -139,7 +135,7 @@ span {
 .card-img-top {
   width: 100%;
   height: 25vw;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* ----------------------------
@@ -209,13 +205,12 @@ span {
 ----------------------------------- */
 form {
   color: dodgerblue;
-  background-color: rgb(198, 195, 196);
+ 
   border-radius: 5%;
 }
 /* -----------------------------------
       -------header pic styles------
 ----------------------------------- */
-
 
 /* -------------------------------------------
     media query between mobil and tablet
@@ -228,10 +223,8 @@ form {
     justify-content: space-between;
   }
 }
-@media (min-width: 320px){
+@media (min-width: 320px) {
   #divheight {
-   
     padding-left: 10px;
   }
- 
 }
