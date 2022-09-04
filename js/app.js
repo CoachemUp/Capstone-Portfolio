@@ -43,5 +43,4 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-// modal print function
 
