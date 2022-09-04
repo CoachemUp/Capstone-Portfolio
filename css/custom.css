@@ -64,11 +64,13 @@ span {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
-  background-image:url(../assets/markus-spiske-hvSr_CVecVI-unsplash.jpg)
+  background-image:url("../assets/markus-spiske-hvSr_CVecVI-unsplash.jpg");
 }
+
 #divheight {
   height: 80vh;
 }
+
 .hero img {
   height: 45vh;
 }
