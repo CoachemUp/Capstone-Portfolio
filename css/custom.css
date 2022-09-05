@@ -230,15 +230,35 @@ iframe {
   height: 100%;
   width: 100%;
 }
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path
+ {
+  fill: dodgerblue;
+}
+
+
 /* -------------------------------------------
     media query between mobil and tablet
 -------------------------------------------- */
-@media (min-width: 319px){
+@media (min-width: 321px){
   #divheight {
     padding-left: 10px;
   }
   .carousel-item {
     height: 20rem;
+  }
+  .svg-icon {
+    width: 2em;
+    height: 2em;
   }
 }
 
